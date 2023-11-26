@@ -31,12 +31,14 @@ app.use(express.json())
 connectDB();
 
 
+//static files
+app.use(express.static('public'))
+
+
 //template 
 app.use(expressLayouts)
 app.set('layout', './layouts/main')
-app.set("views", __dirname + "/views");
-app.set("view engine", "ejs");
-app.use(express.static(__dirname + "public"));
+app.set('view engine', 'ejs')
 
 //routing
 app.use('/', require('./server/routes/auth'))
