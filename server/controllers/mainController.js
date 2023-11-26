@@ -11,16 +11,3 @@ exports.homepage = async (req, res) =>{
     }
     res.render('index', locals)
 };
-
-/**
- * GET /
- * dashboard
- */
-
-exports.dashboard = async (req, res) =>{
-    const locals ={
-        title: "Admin dashboard",
-        description: "I still really miss her oh me? im listening to linux by ubuntu I still really miss her oh me? im listening to linux by ubuntu"
-    }
-    res.render('dashboard', locals)
-};

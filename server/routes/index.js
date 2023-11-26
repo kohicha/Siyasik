@@ -9,10 +9,5 @@ const mainController = require('../controllers/mainController')
  */
 
 router.get('/', mainController.homepage);
-router.get('/dashboard', mainController.dashboard);
-
-
-
-
 
 module.exports = router;

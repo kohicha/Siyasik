@@ -10,7 +10,7 @@ module.exports = {
   
   "./views/layouts/*.ejs",
   
-  "./views/partials/*.ejs"
+  "./views/components/*.ejs"
   
   ],
   
