@@ -9,7 +9,7 @@ const MongoStore = require('connect-mongo')
 
 const app = express()
 
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT;
 
 app.use(session({
     secret:"duck",
